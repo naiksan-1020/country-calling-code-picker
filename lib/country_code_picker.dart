@@ -86,10 +86,7 @@ class _CountryPickerWidgetState extends State<CountryPickerWidget> {
   @override
   void initState() {
     _scrollController.addListener(() {
-      FocusScopeNode currentFocus = FocusScope.of(context);
-      if (!currentFocus.hasPrimaryFocus) {
-        currentFocus.unfocus();
-      }
+
     });
     loadList();
     super.initState();
