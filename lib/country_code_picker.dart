@@ -154,9 +154,6 @@ class _CountryPickerWidgetState extends State<CountryPickerWidget> {
             onChanged: _onSearch,
           ),
         ),
-        SizedBox(
-          height: 16,
-        ),
         Expanded(
           child: _isLoading
               ? Center(child: CircularProgressIndicator())
